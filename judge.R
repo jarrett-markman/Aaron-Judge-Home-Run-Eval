@@ -80,3 +80,12 @@ four <- judge_homers %>%
   filter(RBI == 4)
 solo %>%
   filter(Notes == 'Lead-Off')
+pcts <- c(13/156, 47/506, 2/30)
+bops <- c(1, 2, 3)
+data <- data.frame(pcts, bops)
+data %>%
+  ggplot(aes(x=pcts)) +
+  geom_histogram(col = 'black', fill = 'blue3')
+barplot(pcts, main = 'Aaron Judge Home Run Percentage Distribution by Spot in the Lineup',
+        xlab = 'Spot in the Batting Order', ylab = 'Homer Run Percentage', names.arg = bops,
+        col = 'blue3')
