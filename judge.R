@@ -66,7 +66,7 @@ judge_homers %>%
     x= "Outs in the Inning",
     y='Home Runs',
     title = "Aaron Judge Solo Home Runs by Outs in the Inning",
-    caption = "Jarrett Markman"
+    caption = "Jarrett Markman | Data: Baseball Reference"
   ) +
   theme_bw() + 
   theme(plot.title = element_text(size = 12, face = 'bold', hjust = 0.5))
